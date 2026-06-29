@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Wealthill.com</title>
+  <link rel="icon" href="https://static.wixstatic.com/media/e20113_20360ddfda534fb58869189fa6c39796~mv2.gif/v1/crop/x_0,y_0,w_312,h_344/e20113_20360ddfda534fb58869189fa6c39796~mv2.gif" type="image/gif">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <a href="index.html">Wealthill</a>
+      <span class="nav-tagline">For, Of, By the People...</span>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <h1>About</h1>
+</section>
+
+<section class="about-grid">
+  <div class="about-imgs">
+    <img
+      src="https://static.wixstatic.com/media/e20113_9888426b0ba14eb889c9f4f15fa058b3~mv2.jpg/v1/fill/w_442,h_738,al_c,q_80/e20113_9888426b0ba14eb889c9f4f15fa058b3~mv2.jpg"
+      alt="Main books image"
+    >
+    <img
+      src="https://static.wixstatic.com/media/e20113_8117f7d198054a6ba48d7ed179762a06~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80/e20113_8117f7d198054a6ba48d7ed179762a06~mv2.jpg"
+      alt="Picture 2"
+    >
+    <img
+      src="https://static.wixstatic.com/media/e20113_f910727c615544a889b3dfb92cfd48f1~mv2.jpg/v1/fill/w_240,h_240,al_c,q_80/e20113_f910727c615544a889b3dfb92cfd48f1~mv2.jpg"
+      alt="Picture 3"
+    >
+    <img
+      src="https://static.wixstatic.com/media/e20113_1ef5dc7121b5487083a018610c623f35~mv2.jpg/v1/fill/w_240,h_300,al_c,q_80/e20113_1ef5dc7121b5487083a018610c623f35~mv2.jpg"
+      alt="Picture 4"
+      style="grid-column: 1 / -1; width:50%; margin:0 auto;"
+    >
+  </div>
+
+  <div class="about-text">
+    <h2>About Wealthill.com</h2>
+
+    <div class="pill-list">
+      <div class="pill-row">
+        <span class="pill-label">WEALTHILL.COM</span> is a wealth hill
+      </div>
+      <div class="pill-row">
+        <span class="pill-label">OF</span> books
+      </div>
+      <div class="pill-row">
+        <span class="pill-label">FOR</span> mechanical engineers &amp; students
+      </div>
+      <div class="pill-row">
+        <span class="pill-label">BY</span> an enthusiastic mechanical engineer
+      </div>
+    </div>
+
+    <div class="intro-body">
+      <p>This site is a <strong>REFERENCE GUIDE</strong> with basic information essential for mechanical designing and manufacturing.</p>
+      <p>This site also provides basic <strong>INFORMATION</strong> on the working principles of various simple machines.</p>
+      <div class="highlight-box">
+        In addition, this site is also an <strong>E-LIBRARY</strong> with a collection of books on various topics.
+      </div>
+    </div>
+
+    <div style="margin-top:36px; padding:24px; background:#f0f7f3; border-radius:10px;">
+      <p style="margin-bottom:8px; color:#666; font-size:0.9rem;"><strong>Get in touch</strong></p>
+      <p><a href="mailto:chandu@wealthill.com" style="color:#2d6a4f; text-decoration:none; font-size:1rem;">chandu@wealthill.com</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Contact</h2>
+    <p style="margin-bottom:20px; color:#666; font-size:0.9rem;">Ask me anything</p>
+    <form class="contact-form" id="contact-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Leave Us a Message..."></textarea>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+    <p class="form-success" id="form-success">Thanks for submitting!</p>
+  </div>
+</section>
+
+<footer>
+  <p>Wealthill.com &nbsp;|&nbsp; <a href="mailto:chandu@wealthill.com">chandu@wealthill.com</a></p>
+  <p style="margin-top:6px;">© 2021 by Wealthill.com</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(function () {
+  $('#hamburger').on('click', function () {
+    $('#nav-menu').toggleClass('open');
+  });
+  $('#contact-form').on('submit', function (e) {
+    e.preventDefault();
+    $(this).fadeOut(300, function () {
+      $('#form-success').fadeIn(400);
+    });
+  });
+});
+</script>
+</body>
+</html>
