@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REACTING vs RESPONDING | Wealthill.com</title>
+  <link rel="icon" href="https://static.wixstatic.com/media/e20113_20360ddfda534fb58869189fa6c39796~mv2.gif/v1/crop/x_0,y_0,w_312,h_344/e20113_20360ddfda534fb58869189fa6c39796~mv2.gif" type="image/gif">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <a href="../index.html">Wealthill</a>
+      <span class="nav-tagline">For, Of, By the People...</span>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+    <nav>
+      <ul id="nav-menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="post-container">
+
+  <div style="margin-bottom:16px;">
+    <a href="../blog.html" style="color:#2d6a4f; text-decoration:none; font-size:0.85rem;">&#8592; All Posts</a>
+  </div>
+
+  <div class="post-header">
+    <a class="post-category" href="../blog.html">ARTICLES</a>
+    <h1>REACTING vs RESPONDING</h1>
+    <div class="post-meta">
+      <span class="author">chandra999</span>
+      <span>&bull;</span>
+      <span>Jul 7, 2022</span>
+      <span>&bull;</span>
+      <span>1 min read</span>
+    </div>
+  </div>
+
+  <img
+    class="post-hero-img"
+    src="https://static.wixstatic.com/media/c42e99_c7d92564f47845d0aae13b7135afe5c1~mv2.jpg/v1/fill/w_800,h_620,al_c,q_85/c42e99_c7d92564f47845d0aae13b7135afe5c1~mv2.jpg"
+    alt="REACTING vs RESPONDING"
+  >
+
+  <div class="post-body">
+    <p><em>Reacting</em> is reciprocating in an emotional (without conscious thought) manner, to a particular situation or person. That reciprocation may be favorable or not, depending on individuals' mental status. Reactions never bothered about end results.</p>
+
+    <p><strong>For example:</strong></p>
+
+    <blockquote>
+      Imagine we are in a crowded place and accidentally we bump into someone and before we can say sorry, the person pushes you. The push the other person gave us in return is a reaction. It was like reflex, where they did not pause to reason. It was just spontaneous and thoughtless.
+    </blockquote>
+
+    <p>Responding, is an intelligent emotional (thoughtful with reasoning) interacting for a desired outcome.</p>
+
+    <p>Responsiveness is always from their opponent's point of view.</p>
+
+    <p><strong>For example:</strong></p>
+
+    <blockquote>
+      Imaging the same situation as mentioned in the example of reaction — what if the other person had stopped for a second before he pushed us? If he did, he may have heard our apology and would have been more cordial. This momentary pause that one takes before acting out is called response.
+    </blockquote>
+
+    <p><strong><em>A REACTION is about the moment whereas a RESPONSE is about the outcome.</em></strong></p>
+  </div>
+
+  <div class="recent-posts">
+    <h2>Recent Posts</h2>
+    <div class="recent-list">
+      <div class="recent-item"><a href="respsect-vs-honour.html">RESPECT vs HONOUR</a></div>
+      <div class="recent-item"><a href="argument-vs-discussion.html">ARGUMENT vs DISCUSSION</a></div>
+      <div class="recent-item"><a href="self-respect-vs-ego.html">SELF-RESPECT vs EGO</a></div>
+      <div class="recent-item"><a href="forgiveness-vs-forgetness.html">FORGIVENESS vs FORGETNESS</a></div>
+    </div>
+  </div>
+
+</div>
+
+<section class="contact-section" id="contact">
+  <div class="contact-inner">
+    <h2>Contact</h2>
+    <p style="margin-bottom:20px; color:#666; font-size:0.9rem;">Ask me anything</p>
+    <form class="contact-form" id="contact-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Leave Us a Message..."></textarea>
+      <button type="submit" class="btn-submit">Submit</button>
+    </form>
+    <p class="form-success" id="form-success">Thanks for submitting!</p>
+  </div>
+</section>
+
+<footer>
+  <p>Wealthill.com &nbsp;|&nbsp; <a href="mailto:chandu@wealthill.com">chandu@wealthill.com</a></p>
+  <p style="margin-top:6px;">© 2021 by Wealthill.com</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script>
+$(function () {
+  $('#hamburger').on('click', function () { $('#nav-menu').toggleClass('open'); });
+  $('#contact-form').on('submit', function (e) {
+    e.preventDefault();
+    $(this).fadeOut(300, function () { $('#form-success').fadeIn(400); });
+  });
+});
+</script>
+</body>
+</html>
